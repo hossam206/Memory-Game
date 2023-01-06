@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet"  href ="css/all.min.css">
+</head>
+<body>
+    <div class="overlay">
+        <span>start</span>
+    </div>
+    <div class="name-container">
+
+        <div class="name">
+            Hello :<span></span>
+        </div>
+        <div class="tries">
+            <span class="correct">
+                Correct Tries : (
+                <small>0</small>
+                )
+            </span>
+            <span class="wrong">
+                Wrong Tries: (
+                <small>0</small>
+                )
+            </span>
+        </div>
+    </div>
+    <div class="mamory-game-blocks">
+        <div class="game-block" data-programming = "html">
+            <div class="face front"></div>
+            <div class="face back">
+             <img src="images/download (2).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "html">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (2).png">
+            </div>
+        </div>
+        <div class="game-block" data-programming = "css">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download.png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "css">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download.png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (1).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "js">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (1).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "reactjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (3).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "reactjs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (3).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "Angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (4).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "Angular">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (4).png">
+            </div>
+        </div>
+       
+
+        <div class="game-block" data-programming = "vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (5).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "vuejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (5).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (6).png">
+            </div>
+        </div>
+        <div class="game-block" data-programming = "php">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (6).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "c++">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (7).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "c++">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (7).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "c#">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (8).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "c#">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (8).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "nodejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (9).png">
+            </div>
+        </div>
+
+        <div class="game-block" data-programming = "nodejs">
+            <div class="face front"></div>
+            <div class="face back">
+                <img src="images/download (9).png">
+            </div>
+        </div>
+
+
+        <audio id = "success" src="audio/صوت ميمز قصف الجبهة - from YouTube.mp3" preload="auto"></audio>
+       <audio id="fail" src = "audio/مؤثرات صوتيه __ صوت الخطأ(MP3_160K).mp3"  preload="auto"></audio>
+        <audio id = "match" src="audio/Old victory sound roblox(M4A_128K).m4a"></audio>
+    </div>
+    <!-- start players div -->
+    <div class="players">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Correct Tries</th>
+                <th>Wrong Tries</th>
+            </tr>
+            <tbody id="player">
+
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- start div warning message -->
+    <div class="emptyinputs">
+        <p><i class="fa-solid fa-triangle-exclamation"></i> You Should Enter Your Name..</p>
+    </div>
+    <!-- end div warning message -->
+    
+    <script src="js/all.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
